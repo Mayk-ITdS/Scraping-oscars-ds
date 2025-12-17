@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Awards 1932</title>
+    <style>
+        :root {
+            --primary-color: #C4B454;
+            --secondary-color: #2C3E50;
+            --background-color: #F5F5F5;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        
+        .year-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .year-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .year-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .winner {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .nominee {
+            color: var(--text-color);
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .meta-info {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Oscar Awards Ceremony 1932</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<div class="year-details">
+    <a href="../../oscars/scraping/index.html" class="back-link">&larr; Back to Years</a>
+    
+    
+    <div class="category-section">
+        <h2>ACTOR</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Wallace Beery - "The Champ"</p>
+                
+            </div>
+            
+            <div class="winner">
+                
+                <p>Fredric March - "Dr. Jekyll and Mr. Hyde"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Alfred Lunt - "The Guardsman"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ACTRESS</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Helen Hayes - "The Sin of Madelon Claudet"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Marie Dressler - "Emma"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Lynn Fontanne - "The Guardsman"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ART DIRECTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Gordon Wiles - "Transatlantic"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Lazare Meerson - "À Nous la Liberté"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Richard Day - "Arrowsmith"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>CINEMATOGRAPHY</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Lee Garmes - "Shanghai Express"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Ray June - "Arrowsmith"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Karl Struss - "Dr. Jekyll and Mr. Hyde"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>DIRECTING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Frank Borzage - "Bad Girl"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>King Vidor - "The Champ"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Josef Von Sternberg - "Shanghai Express"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>OUTSTANDING PRODUCTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Metro-Goldwyn-Mayer - "Grand Hotel"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Samuel Goldwyn Productions - "Arrowsmith"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Fox - "Bad Girl"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer - "The Champ"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>First National - "Five Star Final"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount Publix - "One Hour with You"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount Publix - "Shanghai Express"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount Publix - "The Smiling Lieutenant"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Cartoon)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Walt Disney, Producer - "Flowers and Trees"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Leon Schlesinger, Producer - "It's Got Me Again"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Walt Disney, Producer - "Mickey's Orphans"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Comedy)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Hal Roach, Producer - "The Music Box"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Mack Sennett, Producer - "The Loud Mouth"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio - "Scratch-As-Catch-Can"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio - "Stout Hearts and Willing Hands"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Novelty)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Mack Sennett, Producer - "Wrestling Swordfish"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Paramount Publix - "Screen Souvenirs"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer - "Swing High"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SOUND RECORDING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Paramount Publix Studio Sound Department</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer Studio Sound Department</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio Studio Sound Department</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros.-First National Studio Sound Department</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Adaptation)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Edwin Burke - "Bad Girl"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Sidney Howard - "Arrowsmith"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Percy Heath, Samuel Hoffenstein - "Dr. Jekyll and Mr. Hyde"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Original Story)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Frances Marion - "The Champ"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Grover Jones, William Slavens McNutt - "Lady and Gent"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Lucien Hubbard - "The Star Witness"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Adela Rogers St. Johns, Jane Murfin - "What Price Hollywood?"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SPECIAL AWARD</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p> Walt Disney for the creation of "Mickey Mouse."</p>
+                
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Oscar Awards Database - Created for Web Scraping Practice</p>
+            <p class="meta-info">Page ID: 4b4f77ee-dec9-458d-b986-83e7574b8d53</p>
+        </div>
+    </footer>
+</body>
+</html> 

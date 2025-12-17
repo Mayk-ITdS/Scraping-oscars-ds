@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Awards 1933</title>
+    <style>
+        :root {
+            --primary-color: #C4B454;
+            --secondary-color: #2C3E50;
+            --background-color: #F5F5F5;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        
+        .year-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .year-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .year-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .winner {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .nominee {
+            color: var(--text-color);
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .meta-info {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Oscar Awards Ceremony 1933</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<div class="year-details">
+    <a href="../../oscars/scraping/index.html" class="back-link">&larr; Back to Years</a>
+    
+    
+    <div class="category-section">
+        <h2>ACTOR</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Charles Laughton - "The Private Life of Henry VIII"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Leslie Howard - "Berkeley Square"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paul Muni - "I Am a Fugitive from a Chain Gang"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ACTRESS</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Katharine Hepburn - "Morning Glory"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>May Robson - "Lady for a Day"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Diana Wynyard - "Cavalcade"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ART DIRECTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>William S. Darling - "Cavalcade"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Hans Dreier, Roland Anderson - "A Farewell to Arms"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Cedric Gibbons - "When Ladies Meet"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ASSISTANT DIRECTOR</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>William Tummel (Fox)</p>
+                
+            </div>
+            
+            <div class="winner">
+                
+                <p>Charles Dorian (Metro-Goldwyn-Mayer)</p>
+                
+            </div>
+            
+            <div class="winner">
+                
+                <p>Charles Barton (Paramount)</p>
+                
+            </div>
+            
+            <div class="winner">
+                
+                <p>Dewey Starkey (RKO Radio)</p>
+                
+            </div>
+            
+            <div class="winner">
+                
+                <p>Fred Fox (United Artists)</p>
+                
+            </div>
+            
+            <div class="winner">
+                
+                <p>Scott Beal (Universal)</p>
+                
+            </div>
+            
+            <div class="winner">
+                
+                <p>Gordon Hollingshead (Warner Bros.)</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Percy Ikerd (Fox)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Bunny Dull (Metro-Goldwyn-Mayer)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>John S. Waters (Metro-Goldwyn-Mayer)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Sidney S. Brod (Paramount)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Arthur Jacobson (Paramount)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Eddie Killey (RKO Radio)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Benjamin Silvey (United Artists)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Joe McDonough (Universal)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>W. J. Reiter (Universal)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Al Alborn (Warner Bros.)</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Frank X. Shaw (Warner Bros.)</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>CINEMATOGRAPHY</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Charles Bryant Lang, Jr. - "A Farewell to Arms"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>George J. Folsey - "Reunion in Vienna"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Karl Struss - "The Sign of the Cross"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>DIRECTING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Frank Lloyd - "Cavalcade"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Frank Capra - "Lady for a Day"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>George Cukor - "Little Women"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>OUTSTANDING PRODUCTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Fox - "Cavalcade"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Paramount - "A Farewell to Arms"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros. - "42nd Street"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros. - "I Am a Fugitive from a Chain Gang"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Columbia - "Lady for a Day"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio - "Little Women"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>London Films - "The Private Life of Henry VIII"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount - "She Done Him Wrong"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer - "Smilin' Through"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Fox - "State Fair"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Cartoon)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Walt Disney, Producer - "The Three Little Pigs"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Walt Disney, Producer - "Building a Building"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Walter Lantz, Producer - "The Merry Old Soul"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Comedy)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Louis Brock, Producer - "So This Is Harris"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Warren Doane, Producer - "Mister Mugg"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Louis Brock, Producer - "A Preferred List"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Novelty)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Joe Rock, Producer - "Krakatoa"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Pete Smith, Producer - "Menu"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Educational - "The Sea"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SOUND RECORDING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Paramount Studio Sound Department, Franklin B. Hansen, Sound Director - "A Farewell to Arms"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director - "42nd Street"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director - "Gold Diggers of 1933"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros. Studio Sound Department, Nathan Levinson, Sound Director - "I Am a Fugitive from a Chain Gang"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Adaptation)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Victor Heerman, Sarah Y. Mason - "Little Women"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Robert Riskin - "Lady for a Day"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paul Green, Sonya Levien - "State Fair"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Original Story)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Robert Lord - "One Way Passage"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Frances Marion - "The Prizefighter and the Lady"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Charles MacArthur - "Rasputin and the Empress"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Oscar Awards Database - Created for Web Scraping Practice</p>
+            <p class="meta-info">Page ID: 1d857ce9-9935-456f-b301-9ef02e908c5c</p>
+        </div>
+    </footer>
+</body>
+</html> 

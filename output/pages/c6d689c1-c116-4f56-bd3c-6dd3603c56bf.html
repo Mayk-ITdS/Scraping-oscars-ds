@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Awards 1936</title>
+    <style>
+        :root {
+            --primary-color: #C4B454;
+            --secondary-color: #2C3E50;
+            --background-color: #F5F5F5;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        
+        .year-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .year-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .year-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .winner {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .nominee {
+            color: var(--text-color);
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .meta-info {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Oscar Awards Ceremony 1936</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<div class="year-details">
+    <a href="../../oscars/scraping/index.html" class="back-link">&larr; Back to Years</a>
+    
+    
+    <div class="category-section">
+        <h2>ACTOR</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Victor McLaglen - "The Informer"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Clark Gable - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Charles Laughton - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paul Muni - "Black Fury"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Franchot Tone - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ACTRESS</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Bette Davis - "Dangerous"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Elisabeth Bergner - "Escape Me Never"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Claudette Colbert - "Private Worlds"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Katharine Hepburn - "Alice Adams"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Miriam Hopkins - "Becky Sharp"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Merle Oberon - "The Dark Angel"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ART DIRECTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Richard Day - "The Dark Angel"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Hans Dreier, Roland Anderson - "The Lives of a Bengal Lancer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Van Nest Polglase, Carroll Clark - "Top Hat"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ASSISTANT DIRECTOR</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Clem Beauchamp, Paul Wing - "The Lives of a Bengal Lancer"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Joseph Newman - "David Copperfield"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Eric Stacey - "Les Miserables"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Sherry Shourds - "A Midsummer Night's Dream"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>CINEMATOGRAPHY</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Hal Mohr - "A Midsummer Night's Dream"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Ray June - "Barbary Coast"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Victor Milner - "The Crusades"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Gregg Toland - "Les Miserables"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>DANCE DIRECTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Dave Gould - "Broadway Melody of 1936;"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Busby Berkeley - "Gold Diggers of 1935"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Bobby Connolly - "Go into Your Dance;"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Sammy Lee - "King of Burlesque"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Hermes Pan - "Top Hat"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>LeRoy Prinz - "Big Broadcast of 1936;"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Benjamin Zemach - "She"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>DIRECTING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>John Ford - "The Informer"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Michael Curtiz - "Captain Blood"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Henry Hathaway - "The Lives of a Bengal Lancer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Frank Lloyd - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>FILM EDITING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Ralph Dawson - "A Midsummer Night's Dream"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Robert J. Kern - "David Copperfield"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>George Hively - "The Informer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Barbara McLean - "Les Miserables"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Ellsworth Hoagland - "The Lives of a Bengal Lancer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Margaret Booth - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>MUSIC (Scoring)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>RKO Radio Studio Music Department, Max Steiner, head of department  (Score by Max Steiner) - "The Informer"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros.-First National Studio Music Department, Leo Forbstein, head of department  (Score by Erich Wolfgang Korngold) - "Captain Blood"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer Studio Music Department, Nat W. Finston, head of department  (Score by Herbert Stothart) - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount Studio Music Department, Irvin Talbot, head of department  (Score by Ernst Toch) - "Peter Ibbetson"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>MUSIC (Song)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Music by Harry Warren; Lyrics by Al Dubin - "Gold Diggers of 1935"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Music and Lyrics by Irving Berlin - "Top Hat"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Music by Jerome Kern; Lyrics by Dorothy Fields and Jimmy McHugh - "Roberta"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>OUTSTANDING PRODUCTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Metro-Goldwyn-Mayer - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio - "Alice Adams"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer - "Broadway Melody of 1936"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Cosmopolitan - "Captain Blood"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer - "David Copperfield"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio - "The Informer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>20th Century - "Les Miserables"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount - "The Lives of a Bengal Lancer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros. - "A Midsummer Night's Dream"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer - "Naughty Marietta"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount - "Ruggles of Red Gap"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio - "Top Hat"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Cartoon)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Walt Disney, Producer - "Three Orphan Kittens"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Harman-Ising - "The Calico Dragon"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Walt Disney, Producer - "Who Killed Cock Robin?"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Comedy)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Jack Chertok, Producer - "How to Sleep"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Jules White, Producer - "Oh, My Nerves"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Hal Roach, Producer - "Tit for Tat"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SHORT SUBJECT (Novelty)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Gaumont British and Skibo Productions - "Wings over Mt. Everest"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Pete Smith, Producer - "Audioscopiks"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Universal - "Camera Thrills"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SOUND RECORDING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Metro-Goldwyn-Mayer Studio Sound Department, Douglas Shearer, Sound Director - "Naughty Marietta"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Universal Studio Sound Department, Gilbert Kurland, Sound Director - "Bride of Frankenstein"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Warner Bros.-First National Studio Sound Department, Nathan Levinson, Sound Director - "Captain Blood"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>United Artists Studio Sound Department, Thomas T. Moulton, Sound Director - "The Dark Angel"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio Studio Sound Department, Carl Dreher, Sound Director - "I Dream Too Much"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount Studio Sound Department, Franklin B. Hansen, Sound Director - "The Lives of a Bengal Lancer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Columbia Studio Sound Department, John Livadary, Sound Director - "Love Me Forever"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Republic Studio Sound Department - "$1,000 a Minute"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>20th Century-Fox Studio Sound Department, E. H. Hansen, Sound Director - "Thanks a Million"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Original Story)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Ben Hecht, Charles MacArthur - "The Scoundrel"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Moss Hart - "Broadway Melody of 1936"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Gregory Rogers - "G-Men"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Don Hartman, Stephen Avery - "The Gay Deception"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Screenplay)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Dudley Nichols - "The Informer"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Casey Robinson - "Captain Blood"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Screenplay by Waldemar Young, John L. Balderston, Achmed Abdullah;  Adaptation by Grover Jones, William Slavens McNutt - "The Lives of a Bengal Lancer"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Talbot Jennings, Jules Furthman, Carey Wilson - "Mutiny on the Bounty"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SPECIAL AWARD</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p> David Wark Griffith</p>
+                
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Oscar Awards Database - Created for Web Scraping Practice</p>
+            <p class="meta-info">Page ID: c6d689c1-c116-4f56-bd3c-6dd3603c56bf</p>
+        </div>
+    </footer>
+</body>
+</html> 

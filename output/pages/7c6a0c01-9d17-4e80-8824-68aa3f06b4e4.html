@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Awards 1931</title>
+    <style>
+        :root {
+            --primary-color: #C4B454;
+            --secondary-color: #2C3E50;
+            --background-color: #F5F5F5;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        
+        .year-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .year-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .year-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .winner {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .nominee {
+            color: var(--text-color);
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .meta-info {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Oscar Awards Ceremony 1931</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<div class="year-details">
+    <a href="../../oscars/scraping/index.html" class="back-link">&larr; Back to Years</a>
+    
+    
+    <div class="category-section">
+        <h2>ACTOR</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Lionel Barrymore - "A Free Soul"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Jackie Cooper - "Skippy"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Richard Dix - "Cimarron"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Fredric March - "The Royal Family of Broadway"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Adolphe Menjou - "The Front Page"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ACTRESS</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Marie Dressler - "Min and Bill"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Marlene Dietrich - "Morocco"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Irene Dunne - "Cimarron"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Ann Harding - "Holiday"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Norma Shearer - "A Free Soul"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>ART DIRECTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Max Rée - "Cimarron"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Stephen Goosson, Ralph Hammeras - "Just Imagine"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Hans Dreier - "Morocco"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Anton Grot - "Svengali"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Richard Day - "Whoopee!"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>CINEMATOGRAPHY</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Floyd Crosby - "Tabu"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Edward Cronjager - "Cimarron"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Lee Garmes - "Morocco"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Charles Lang - "The Right to Love"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Barney "Chick" McGill - "Svengali"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>DIRECTING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Norman Taurog - "Skippy"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Wesley Ruggles - "Cimarron"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Clarence Brown - "A Free Soul"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Lewis Milestone - "The Front Page"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Josef Von Sternberg - "Morocco"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>OUTSTANDING PRODUCTION</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>RKO Radio - "Cimarron"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Fox - "East Lynne"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>The Caddo Company - "The Front Page"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Paramount Publix - "Skippy"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer - "Trader Horn"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>SOUND RECORDING</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Paramount Publix Studio Sound Department</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Samuel Goldwyn - United Artists Studio Sound Department</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Metro-Goldwyn-Mayer Studio Sound Department</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>RKO Radio Studio Sound Department</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Adaptation)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>Howard Estabrook - "Cimarron"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Seton I. Miller, Fred Niblo, Jr. - "The Criminal Code"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Horace Jackson - "Holiday"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Francis Faragoh, Robert N. Lee - "Little Caesar"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Joseph L. Mankiewicz, Sam Mintz - "Skippy"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="category-section">
+        <h2>WRITING (Original Story)</h2>
+        
+        <div class="winners">
+            <h3>Winners</h3>
+            
+            <div class="winner">
+                
+                <p>John Monk Saunders - "The Dawn Patrol"</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="nominees">
+            <h3>Nominees</h3>
+            
+            <div class="nominee">
+                
+                <p>Rowland Brown - "The Doorway to Hell"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Harry d'Abbadie d'Arrast, Douglas Doty, Donald Ogden Stewart - "Laughter"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>John Bright, Kubec Glasmon - "The Public Enemy"</p>
+                
+            </div>
+            
+            <div class="nominee">
+                
+                <p>Lucien Hubbard, Joseph Jackson - "Smart Money"</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Oscar Awards Database - Created for Web Scraping Practice</p>
+            <p class="meta-info">Page ID: 7c6a0c01-9d17-4e80-8824-68aa3f06b4e4</p>
+        </div>
+    </footer>
+</body>
+</html> 

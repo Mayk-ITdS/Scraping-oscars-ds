@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Awards - Years</title>
+    <style>
+        :root {
+            --primary-color: #C4B454;
+            --secondary-color: #2C3E50;
+            --background-color: #F5F5F5;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        
+        .year-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .year-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .year-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .winner {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .nominee {
+            color: var(--text-color);
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .meta-info {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Oscar Awards - Ceremony Years</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<div class="search-container">
+    <input type="text" id="yearSearch" class="search-box" placeholder="Search years...">
+</div>
+
+<div class="year-list" id="yearGrid">
+    
+    <div class="year-card" data-year="2024">
+        <h2>2024</h2>
+        <a href="../../output/pages/e0e8d1fc-6525-4483-aa92-e1cc683a7a03.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2023">
+        <h2>2023</h2>
+        <a href="../../output/pages/f5eaf5b6-3e93-4aec-abfb-e0a14cd61dbb.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2022">
+        <h2>2022</h2>
+        <a href="../../output/pages/dfa96696-b0e2-409a-9ce7-da59d979eec4.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2021">
+        <h2>2021</h2>
+        <a href="../../output/pages/ef158655-7895-4b88-bb5a-9152bd5e4c7d.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2020">
+        <h2>2020</h2>
+        <a href="../../output/pages/f8804484-36d6-4aeb-bc7b-7e65c9c7eeaa.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2019">
+        <h2>2019</h2>
+        <a href="../../output/pages/555cbfc7-9223-4abe-8b90-9ce05da9a39d.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2018">
+        <h2>2018</h2>
+        <a href="../../output/pages/62024780-5116-497d-97e4-98eee4ae3e9a.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2017">
+        <h2>2017</h2>
+        <a href="../../output/pages/124c15ac-4bb2-47c6-ba13-189c2923eac3.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2016">
+        <h2>2016</h2>
+        <a href="../../output/pages/1066be6e-abba-4c42-903d-1452b0a48c0c.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2015">
+        <h2>2015</h2>
+        <a href="../../output/pages/fde07af5-12c1-4088-a9f3-bcd3925f9265.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2014">
+        <h2>2014</h2>
+        <a href="../../output/pages/ae527285-6c96-4320-a2f8-2eeed54802b8.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2013">
+        <h2>2013</h2>
+        <a href="../../output/pages/84b9fabc-39a6-44f4-a675-514b62ebdaab.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2012">
+        <h2>2012</h2>
+        <a href="../../output/pages/92b99956-d559-400a-881e-b86a1e93933a.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2011">
+        <h2>2011</h2>
+        <a href="../../output/pages/385141bc-bbd8-43bb-8ac5-622c3bde0ec9.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2010">
+        <h2>2010</h2>
+        <a href="../../output/pages/f63a85c0-01e6-4fbe-adfa-7a03a6e67f8f.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2009">
+        <h2>2009</h2>
+        <a href="../../output/pages/cd49ce9a-550b-43f4-856a-cf4d8b9a1c15.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2008">
+        <h2>2008</h2>
+        <a href="../../output/pages/c202abb8-a230-47cb-b091-8c7fe7c27d6f.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2007">
+        <h2>2007</h2>
+        <a href="../../output/pages/33cc5493-7025-4384-ab1d-f922546297ac.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2006">
+        <h2>2006</h2>
+        <a href="../../output/pages/b5637cfd-54c7-4d50-a13e-6a481977fd04.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2005">
+        <h2>2005</h2>
+        <a href="../../output/pages/c603fd21-813a-442f-8013-939be4b7c630.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2004">
+        <h2>2004</h2>
+        <a href="../../output/pages/6f9a7992-64df-4bf3-96af-1d77fb6af197.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2003">
+        <h2>2003</h2>
+        <a href="../../output/pages/0978b092-81e7-4b56-88cf-d635f9ffa8dc.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2002">
+        <h2>2002</h2>
+        <a href="../../output/pages/19ce2864-b1c1-4e78-8f22-c55aa30f43f1.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2001">
+        <h2>2001</h2>
+        <a href="../../output/pages/68dcf09d-7320-4cda-9a20-e20e94717e90.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="2000">
+        <h2>2000</h2>
+        <a href="../../output/pages/623fbfdf-d933-4795-b543-e72827d453c4.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1999">
+        <h2>1999</h2>
+        <a href="../../output/pages/a02e3a60-206c-43ac-9c37-0ed95a967851.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1998">
+        <h2>1998</h2>
+        <a href="../../output/pages/9205579a-a2ce-43f1-93f9-f863d4a3c135.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1997">
+        <h2>1997</h2>
+        <a href="../../output/pages/ccb0c005-f2dd-4854-a840-55bc39c69021.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1996">
+        <h2>1996</h2>
+        <a href="../../output/pages/77f9ee0f-8f3a-4507-8c34-b04c6f2f43f0.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1995">
+        <h2>1995</h2>
+        <a href="../../output/pages/f2bd962a-ed50-4132-b57b-75e24eb95609.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1994">
+        <h2>1994</h2>
+        <a href="../../output/pages/abf8e800-95fe-48df-b2cb-4d5366172c0b.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1993">
+        <h2>1993</h2>
+        <a href="../../output/pages/7a234831-1466-4dd8-9ca4-691584f06ff1.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1992">
+        <h2>1992</h2>
+        <a href="../../output/pages/b00a9002-270d-46ca-97df-d2ae624cf35b.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1991">
+        <h2>1991</h2>
+        <a href="../../output/pages/1014a66b-f5fb-42fc-b6e1-c41b01c20e0c.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1990">
+        <h2>1990</h2>
+        <a href="../../output/pages/eb63f127-b8ea-4284-9f23-81fa1597b5ca.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1989">
+        <h2>1989</h2>
+        <a href="../../output/pages/94c8ada3-7846-4d06-8b8c-281637ef3886.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1988">
+        <h2>1988</h2>
+        <a href="../../output/pages/c8703832-2ef4-4e06-990f-56537800aa6c.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1987">
+        <h2>1987</h2>
+        <a href="../../output/pages/1578ed5c-5ea9-4e02-8306-8130102ea855.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1986">
+        <h2>1986</h2>
+        <a href="../../output/pages/6828bf94-b721-4bad-8d5f-3482b6d76a9d.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1985">
+        <h2>1985</h2>
+        <a href="../../output/pages/14d35a1e-a198-466f-bc60-069221db3e0e.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1984">
+        <h2>1984</h2>
+        <a href="../../output/pages/fa727dc1-6164-4584-b1a7-a7bed7f35c35.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1983">
+        <h2>1983</h2>
+        <a href="../../output/pages/e12d834a-dd06-464a-bcd7-036fb44f1a84.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1982">
+        <h2>1982</h2>
+        <a href="../../output/pages/bd5bc41b-def6-45e5-b590-fccaf32e3837.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1981">
+        <h2>1981</h2>
+        <a href="../../output/pages/f8b8b939-27ae-4c81-bfb5-a19732702474.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1980">
+        <h2>1980</h2>
+        <a href="../../output/pages/8cf2803d-73fc-415f-9fa3-5b43475faa72.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1979">
+        <h2>1979</h2>
+        <a href="../../output/pages/a30fbcd6-54e2-4a53-b567-5bd24cfc4fb0.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1978">
+        <h2>1978</h2>
+        <a href="../../output/pages/1be84c2f-ec88-476d-b946-2516086ae4c8.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1977">
+        <h2>1977</h2>
+        <a href="../../output/pages/1125022f-415b-4719-b1d8-8867e823fead.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1976">
+        <h2>1976</h2>
+        <a href="../../output/pages/ce9bd214-7e3e-4862-9862-73263349a557.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1975">
+        <h2>1975</h2>
+        <a href="../../output/pages/cca51b9b-6326-4d28-ad59-a3d797f63faf.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1974">
+        <h2>1974</h2>
+        <a href="../../output/pages/c6a448b9-5ebe-4c56-b5a5-aeae792ce7e4.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1973">
+        <h2>1973</h2>
+        <a href="../../output/pages/e1e88478-3e97-4427-8b01-c44c031fce4c.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1972">
+        <h2>1972</h2>
+        <a href="../../output/pages/d48f339d-ea3e-4c46-a493-90f5a3b2f5f3.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1971">
+        <h2>1971</h2>
+        <a href="../../output/pages/2bcccdb1-ee0a-48e6-9059-05d1634887f7.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1970">
+        <h2>1970</h2>
+        <a href="../../output/pages/8a1d49c1-3eab-49e2-84fa-4667542f3b41.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1969">
+        <h2>1969</h2>
+        <a href="../../output/pages/b8ad7c2b-fcdd-4f98-948a-7b90a5ac01cd.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1968">
+        <h2>1968</h2>
+        <a href="../../output/pages/3097c460-41b9-46ce-9a5d-3eca4a3c6ada.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1967">
+        <h2>1967</h2>
+        <a href="../../output/pages/19253ffc-da12-4444-8562-89d63efd6d03.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1966">
+        <h2>1966</h2>
+        <a href="../../output/pages/f2d29217-7519-45b7-bcea-12086033b5bb.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1965">
+        <h2>1965</h2>
+        <a href="../../output/pages/de48caf0-1cb4-4f93-8f34-f3d1ff8b0d42.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1964">
+        <h2>1964</h2>
+        <a href="../../output/pages/2d0bc6c7-db3a-4ffb-b4d1-4a06c4dc9e98.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1963">
+        <h2>1963</h2>
+        <a href="../../output/pages/f93f2d39-a496-4a87-9a0f-3878d8a281bb.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1962">
+        <h2>1962</h2>
+        <a href="../../output/pages/225a4444-3d1c-42e3-94b9-41a1b04dcbf8.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1961">
+        <h2>1961</h2>
+        <a href="../../output/pages/4265e7b5-78aa-4925-911d-03a29394d62e.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1960">
+        <h2>1960</h2>
+        <a href="../../output/pages/518c015e-6631-4043-9c1d-afddc1b2a6cb.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1959">
+        <h2>1959</h2>
+        <a href="../../output/pages/87f0d74f-f66d-4649-8ba8-4a3656a20170.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1958">
+        <h2>1958</h2>
+        <a href="../../output/pages/336f99f5-d912-4435-923d-2b068cae2c4f.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1957">
+        <h2>1957</h2>
+        <a href="../../output/pages/ca5ffda3-1978-4953-bee1-c1efc767b435.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1956">
+        <h2>1956</h2>
+        <a href="../../output/pages/3cebdd76-1c54-4e4f-9e55-5e4536a7b139.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1955">
+        <h2>1955</h2>
+        <a href="../../output/pages/472ac123-0f81-4a68-b141-392236d1084f.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1954">
+        <h2>1954</h2>
+        <a href="../../output/pages/82c1c10f-668e-46e7-b00f-4d8e4874a1f9.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1953">
+        <h2>1953</h2>
+        <a href="../../output/pages/750f5c30-8e19-48d2-99c9-c3f911b8f235.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1952">
+        <h2>1952</h2>
+        <a href="../../output/pages/56824a7c-3dc9-4c36-83cd-45b31c45c360.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1951">
+        <h2>1951</h2>
+        <a href="../../output/pages/c9ba4b64-5b58-4a1c-a2ff-fa6652849dd6.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1950">
+        <h2>1950</h2>
+        <a href="../../output/pages/54c6218d-2b6b-4ed9-b517-2882f71b921b.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1949">
+        <h2>1949</h2>
+        <a href="../../output/pages/6a468f8c-9b7d-418f-bd6d-846b78b3f5a6.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1948">
+        <h2>1948</h2>
+        <a href="../../output/pages/169f17bf-14d8-4149-86c5-a0798eb0ef94.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1947">
+        <h2>1947</h2>
+        <a href="../../output/pages/519ee188-217a-495f-bc76-700b427f4cfc.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1946">
+        <h2>1946</h2>
+        <a href="../../output/pages/1a513db4-cec8-4042-bf6b-28d1d11a7389.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1945">
+        <h2>1945</h2>
+        <a href="../../output/pages/468d5821-7ff6-477f-a535-53718f371950.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1944">
+        <h2>1944</h2>
+        <a href="../../output/pages/7c9a03c6-9663-4a63-8c77-d50454309020.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1943">
+        <h2>1943</h2>
+        <a href="../../output/pages/a1253066-9fd5-4092-918c-027fdc7bba40.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1942">
+        <h2>1942</h2>
+        <a href="../../output/pages/befc05f9-7ce1-46e8-8c07-5a66dc190387.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1941">
+        <h2>1941</h2>
+        <a href="../../output/pages/0c7b983b-419f-489f-89b9-bc9eec9640fd.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1940">
+        <h2>1940</h2>
+        <a href="../../output/pages/bcfdc6d1-4817-48e8-b6b9-ffb45c036653.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1939">
+        <h2>1939</h2>
+        <a href="../../output/pages/e21f9450-064b-4bfe-9d08-f3d602e49350.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1938">
+        <h2>1938</h2>
+        <a href="../../output/pages/971cf7fb-1efe-4cf2-a26a-87affae2eff0.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1937">
+        <h2>1937</h2>
+        <a href="../../output/pages/6ceda24d-0d94-4559-9fa2-19d5cc720a4e.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1936">
+        <h2>1936</h2>
+        <a href="../../output/pages/c6d689c1-c116-4f56-bd3c-6dd3603c56bf.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1935">
+        <h2>1935</h2>
+        <a href="../../output/pages/47dd6134-7bc9-44e1-a7dd-8f938e871194.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1933">
+        <h2>1933</h2>
+        <a href="../../output/pages/1d857ce9-9935-456f-b301-9ef02e908c5c.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1932">
+        <h2>1932</h2>
+        <a href="../../output/pages/4b4f77ee-dec9-458d-b986-83e7574b8d53.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1931">
+        <h2>1931</h2>
+        <a href="../../output/pages/7c6a0c01-9d17-4e80-8824-68aa3f06b4e4.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1930">
+        <h2>1930</h2>
+        <a href="../../output/pages/c6c710f5-cdb9-4eee-a13f-1b948c26f84d.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1929">
+        <h2>1929</h2>
+        <a href="../../output/pages/40b0571b-da27-4c29-b083-e51cb0d6ed77.html">View Details</a>
+    </div>
+    
+    <div class="year-card" data-year="1928">
+        <h2>1928</h2>
+        <a href="../../output/pages/c2a21ba5-24b8-4bfa-8b21-94acee068902.html">View Details</a>
+    </div>
+    
+</div>
+
+<script>
+    document.getElementById('yearSearch').addEventListener('input', function(e) {
+        const searchValue = e.target.value.toLowerCase();
+        const yearCards = document.querySelectorAll('.year-card');
+        
+        yearCards.forEach(card => {
+            const year = card.getAttribute('data-year');
+            if (year.includes(searchValue)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Oscar Awards Database - Created for Web Scraping Practice</p>
+            <p class="meta-info">Page ID: index</p>
+        </div>
+    </footer>
+</body>
+</html> 
