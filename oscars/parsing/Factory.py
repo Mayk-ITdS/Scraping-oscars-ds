@@ -4,7 +4,7 @@ import pandas as pd
 import re
 from oscars.parsing.normalizers import norm_entity, split_entity_col, norm_role
 from oscars.utils.my_functions import ensure_schema_min, subtract_generic_by_priority
-from src.pipeline import TRANSFORMED
+from oscars.config import TRANSFORMED
 
 _WS = re.compile(r'\s+')
 SUFFIX_TOK = r'(?:Jr|Sr|I{2,3}|IV|V)\.?'

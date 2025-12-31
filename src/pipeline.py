@@ -8,12 +8,9 @@ from oscars.parsing.GenderResolver import GenderResolver
 from oscars.scraping.extract import flattened
 from oscars.utils.db_seeder import export_to_sqlite
 from oscars.utils.queries_tests import ask_my_base
+from oscars.config import TRANSFORMED, FIG_GENDER, FIG_ACTING, DB_DIR
 
-ROOT = Path(__file__).resolve().parents[1]
-TRANSFORMED = ROOT / "analitics" / "transformed"
-FIG_GENDER = TRANSFORMED / "figures_gender"
-FIG_ACTING = TRANSFORMED / "figures_acting"
-DB_DIR = TRANSFORMED / "db"
+
 for d in (TRANSFORMED, FIG_GENDER, FIG_ACTING,DB_DIR):
     d.mkdir(parents=True, exist_ok=True)
 
