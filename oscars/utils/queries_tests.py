@@ -1,8 +1,10 @@
 import sqlite3
 from pathlib import Path
+from oscars.scraping.extract import TRANSFORMED
 
-DB_PATH = Path(__file__).resolve().parents[2] / "transformed" / "role_oscars_gold.db"
+DB_PATH = TRANSFORMED / "db" / "role_oscars_gold.db"
 def ask_my_base():
+    print("hello jestesmy w ask my base!!")
     conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()
 
@@ -30,5 +32,6 @@ def ask_my_base():
     """
 
     rows = cur.execute(sql, ("MUSIC (Original Score)",)).fetchall()
+    print('a teraz ma byc print z bazy: ')
     for row in rows:
         print(row)

@@ -1,7 +1,10 @@
+from pathlib import Path
+
 import pandas as pd
 import re
 from oscars.parsing.normalizers import norm_entity, split_entity_col, norm_role
 from oscars.utils.my_functions import ensure_schema_min, subtract_generic_by_priority
+from src.pipeline import TRANSFORMED
 
 _WS = re.compile(r'\s+')
 SUFFIX_TOK = r'(?:Jr|Sr|I{2,3}|IV|V)\.?'
@@ -369,7 +372,7 @@ def build_pri_all(base_,frames_dict, m_pat_notes, m_generic_full,year_map=None, 
 
     pri_all = ensure_schema_min(pri_all)
     with pd.option_context('display.max_rows', None, 'display.max_columns', None, 'display.width', 200):
-        pri_all.to_csv("pri_all.csv", index=False)
+        pri_all.to_csv( TRANSFORMED / "pri_all.csv", index=False)
 
     pri_all['role'] =  (pri_all['role'].astype('string').fillna("").str.split(r'\s*,\s*'))
 

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# venv
+.venv/
+.venv*/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated artifacts / outputs
+analitics/transformed/
+transformed/
+*.csv
+*.json
+*.png
+*.prof
+*.db
+*.sqlite

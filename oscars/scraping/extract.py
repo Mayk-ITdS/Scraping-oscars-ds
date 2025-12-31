@@ -1,14 +1,14 @@
 import re
 import sys
-
 import pandas as pd
 from bs4 import BeautifulSoup as bs, Tag
 from pathlib import Path
 from oscars.utils.report_gen import generate_raw_report
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 INDEX_PATH = HERE / "index.html"
-TRANSFORMED = ROOT / "transformed"
+TRANSFORMED = ROOT / "analitics/transformed"
 
 def _load_html():
     with INDEX_PATH.open(encoding="utf-8") as f:
@@ -126,15 +126,18 @@ def flattened():
     df = flatten_awards(res)
     TRANSFORMED.mkdir(parents=True, exist_ok=True)
 
-    inp = sys.argv[1] if len(sys.argv) > 1 else "../../transformed/oscars_bronze.csv"
-    outp = sys.argv[2] if len(sys.argv) > 2 else "../analysis/bronze_data_report.txt"
-    diff_out = sys.argv[3] if len(sys.argv) > 3 else "../analysis/bronze_with_difficulty.csv"
-    rep = generate_raw_report(df,inp,outp,max_object_examples=20,
-                        random_state=42,
-                        difficulty_csv_path=diff_out)
-    print(rep[2000])
+    bronze_csv = TRANSFORMED / "oscars_bronze.csv"
+    report_txt = TRANSFORMED / "bronze_data_report.txt"
+    diff_csv = TRANSFORMED / "bronze_with_difficulty.csv"
+
     df.drop_duplicates(subset=["year","link","category","object","is_winner"], inplace=True)
-    df.to_csv(TRANSFORMED / "oscars_bronze.csv", index=False)
+    df.to_csv(bronze_csv, index=False)
+
+    rep = generate_raw_report(df, bronze_csv, report_txt, max_object_examples=20,
+                              random_state=42,
+                              difficulty_csv_path=diff_csv)
+    print('Tu jest print: ',type(rep))
+
     return df
 
 if __name__ == "__main__":

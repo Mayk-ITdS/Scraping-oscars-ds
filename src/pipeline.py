@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 import cProfile, pstats, io
-import analysis
+from analitics import drafts
 from oscars.parsing.NamesBuffer import NamesBuffer
 from oscars.scraping.extract_from_text import extract_title_and_left,extract_roles_by_person
 from oscars.parsing.GenderResolver import GenderResolver
@@ -10,12 +10,11 @@ from oscars.utils.db_seeder import export_to_sqlite
 from oscars.utils.queries_tests import ask_my_base
 
 ROOT = Path(__file__).resolve().parents[1]
-TRANSFORMED = ROOT / "transformed"
+TRANSFORMED = ROOT / "analitics" / "transformed"
 FIG_GENDER = TRANSFORMED / "figures_gender"
 FIG_ACTING = TRANSFORMED / "figures_acting"
-cPROFILER_STATS = TRANSFORMED / "cProfiler_stats.prof"
-ANALYSIS = ROOT /  "analysis"
-for d in (TRANSFORMED, FIG_GENDER, FIG_ACTING,cPROFILER_STATS):
+DB_DIR = TRANSFORMED / "db"
+for d in (TRANSFORMED, FIG_GENDER, FIG_ACTING,DB_DIR):
     d.mkdir(parents=True, exist_ok=True)
 
 def main():
@@ -37,11 +36,10 @@ def main():
 
     df_roles['entity'] = df_roles['entity'].map(NamesBuffer.normalize_entity)
 
-    analysis.drafts.visualize(df_roles.copy(), ANALYSIS)
-    export_to_sqlite(df_roles, TRANSFORMED / "role_oscars_gold.db")
+    drafts.visualize(df_roles.copy(), TRANSFORMED)
+    export_to_sqlite(df_roles, DB_DIR / "role_oscars_gold.db")
     ask_my_base()
     df_roles.to_csv(TRANSFORMED / "final_oscars_data.csv", quoting=csv.QUOTE_ALL,index=False)
-
 
 if __name__ == "__main__":
     pr = cProfile.Profile()

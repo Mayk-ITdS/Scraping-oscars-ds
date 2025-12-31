@@ -1,32 +1,15 @@
 from __future__ import annotations
 import re
 from pathlib import Path
-import sys
 import pandas as pd
 from pandas import DataFrame
 from oscars.parsing.Factory import extract_pairs, extract_new_sound
-
-ROOT = Path(__file__).resolve().parents[2]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
-sys.path.insert(0, str(ROOT))
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 # pd.set_option('display.max_colwidth', None)
-
-csv_path = ROOT / 'output' / 'transformed' / 'oscars.csv'
-df = pd.read_csv(csv_path)
-if 'Unnamed: 0' in df.columns:
-    df = df.rename(columns={'Unnamed: 0': 'row_id'}).set_index('row_id')
-else:
-    df['row_id'] = df.index
-print(df.head())
-print(df.tail())
-print("Index range:", df.index.min(), "→", df.index.max())
-print("Row count:", len(df))
-print("Czy kolumna Unnamed: 0 istnieje?", 'Unnamed: 0' in df.columns)
+ROOT = Path(__file__).resolve().parents[2]
+TRANSFORMED = ROOT / "analitics" / "transformed"
 
 KEY = ['year','link','category','object','is_winner']
 
@@ -145,7 +128,8 @@ def extract_roles_by_person(df: DataFrame) -> DataFrame:
     m_generic = left_s_generic.map(split_keep_protected).explode().reset_index().rename(
         columns={'index': 'row_id', 'left': 'entity'}).assign(role=pd.NA)
     m_generic_full = ensure_schema_min(m_generic)
-    m_generic_full.to_csv('../transformed/m_generic_full.csv')
+    TRANSFORMED.mkdir(parents=True, exist_ok=True)
+    m_generic_full.to_csv(TRANSFORMED / 'm_generic_full.csv')
     # concat because double role per entity
     m_head_written_final = extract_head_written(m_by_paren,m_head_final,m_written_final)
 
